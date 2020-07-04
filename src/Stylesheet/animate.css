@@ -1,0 +1,70 @@
+.svg1{
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: anime 2.4s ease forwards;
+}
+.svg2{
+    stroke-dasharray: 289;
+    stroke-dashoffset: 289;
+    animation: anime 2.4s ease forwards 0.2s;
+}
+.svg3{
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    animation: anime 2.4s ease forwards 0.4s;
+}
+.svg4{
+    stroke-dasharray: 338;
+    stroke-dashoffset: 338;
+    animation: anime 2.4s ease forwards  0.6s;
+}
+.svg5{
+    stroke-dasharray: 282;
+    stroke-dashoffset: 282;
+    animation: anime 2.4s ease forwards 0.8s;
+}
+.svg6{
+    stroke-dasharray: 164;
+    stroke-dashoffset: 164;
+    animation: anime 2.4s ease forwards 1.0s;
+}
+.svg7{
+    stroke-dasharray: 344;
+    stroke-dashoffset: 344;
+    animation: anime 2.4s ease forwards  1.2s;
+}
+.svg8{
+    stroke-dasharray: 426;
+    stroke-dashoffset: 426;
+    animation: anime 2.4s ease forwards 1.4s;
+}
+.svg9{
+    stroke-dasharray: 338;
+    stroke-dashoffset: 338;
+    animation: anime 2.4s ease forwards  1.6;
+}
+.svg10{
+    stroke-dasharray: 223;
+    stroke-dashoffset: 223;
+    animation: anime 2.4s ease forwards  1.8s;
+}
+.svg11{
+    stroke-dasharray: 281;
+    stroke-dashoffset: 281;
+    animation: anime 2.4s ease forwards 2.0s;
+}
+.svg12{
+    stroke-dasharray: 237;
+    stroke-dashoffset: 237;
+    animation: anime 2.4s ease forwards 2.2s;
+}
+.svg13{
+    stroke-dasharray: 151;
+    stroke-dashoffset: 151;
+    animation: anime 2.4s ease forwards  2.4s;
+}
+@keyframes anime{
+    to{
+        stroke-dashoffset: 0;
+    }
+}

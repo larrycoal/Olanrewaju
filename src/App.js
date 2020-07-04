@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
+import { Link } from 'react-router-dom'
+import Main from './Components/Main'
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-page">
+      <Layout>
+        <div >
+          <Header className="title" title="<olanrewaju/>" style={{ color: 'white' }}>
+            <Navigation>
+            <Link to="/">Home</Link>
+              <Link to="/about">About Me</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/project">Projects</Link>
+            </Navigation>
+          </Header>
+        </div>
+        <Drawer  className="drawer" title="Olanrewaju">
+          <Navigation className="drawer">
+            <Link  id="drawer" to="/about">About Me</Link>
+            <Link id="drawer" to="/contact">Contact</Link>
+            <Link id="drawer" to="/project">Projects</Link>
+          </Navigation>
+        </Drawer>
+        <Content>
+          <Main />
+        </Content>
+      </Layout>
     </div>
   );
 }

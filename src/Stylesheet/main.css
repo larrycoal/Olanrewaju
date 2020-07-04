@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    height: 100vh;
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.title{
+    background-color: rgba(0,0,0,0.9)
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.light-mode{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transition: background-color 1s;
+}
+.dark-mode{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+    transition: background-color 1s;
+}
+/* drawer*/
+.drawer{
+    background-image: url("./Assets/josh-sorenson-B93kPaspXcA-unsplash.jpg");
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+#drawer{
+    color: white;
+    font-family: poppins;
+    font-weight: 500px;
+    font-size: 2rem;
+}
+.drawer::after{
+    content: "";
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+/* landing page*/
+.heading{
+    color: white;
+}
+.light-heading{
+    text-shadow:0px 8px 8px black;
+    
+}
+.subtext p{
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* bulb styling*/
+i{
+    color:white;
+}
+
+
+.mode i{
+    font-size: 50px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.mode{
+    position: fixed;
+    top:70px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+/* About me*/
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-rows: auto;
+    height: 100vh;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.abt-img{
+    display: grid;
+    height: 100%;
+}
+.abt-img div{
+    height:600px;
+    width:520px;
+    align-self: center;
+    justify-self: center;
+}
+.abt-text{
+    margin:10px;
+    color: white;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+.abt-text p{
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+/* contact page*/
+.chat-main{
+    display:grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 45rem;
+    height: 40rem;
+    margin: 0 auto;
+}
+.chat-text{
+    overflow: scroll;
+    margin:  15px;
+}
+li{
+    list-style: none;
+}
+/* project page*/
+.project-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.project-card section{
+    padding: 10px;
+}
