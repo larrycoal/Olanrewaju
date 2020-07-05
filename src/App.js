@@ -14,15 +14,14 @@ function App() {
             <Navigation>
             <Link to="/">Home</Link>
               <Link to="/about">About Me</Link>
-              <Link to="/contact">Contact</Link>
               <Link to="/project">Projects</Link>
             </Navigation>
           </Header>
         </div>
         <Drawer  className="drawer" title="Olanrewaju">
           <Navigation className="drawer">
+          <Link  id="drawer" to="/">Home</Link>
             <Link  id="drawer" to="/about">About Me</Link>
-            <Link id="drawer" to="/contact">Contact</Link>
             <Link id="drawer" to="/project">Projects</Link>
           </Navigation>
         </Drawer>

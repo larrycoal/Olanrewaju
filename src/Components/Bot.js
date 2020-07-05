@@ -1,7 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import {sendMessage} from './chat'
-class App extends React.Component {
+
+
+class Bot extends React.Component {
    messageEnd =React.createRef()
   messanger(e){
      this.props.sendMessage(e.target.value)
@@ -18,7 +20,7 @@ scrollToBottom = () => {
     return(
       <div className="chat-main">
         <div>
-          <h3>CHATBOT</h3>
+          <h3>Olanrewaju Assistant</h3>
         </div>
     <div className="chat-text">{
       feed.map((entry)=>{
@@ -33,7 +35,7 @@ scrollToBottom = () => {
       })
       }</div>
         <div>
-        <input type="text" onKeyDown={(e)=>e.keyCode===13?this.messanger(e):null} placeholder="Type message....."/>
+        <input style={{"color":"white"}} type="text" onKeyDown={(e)=>e.keyCode===13?this.messanger(e):null} placeholder="Type message....."/>
         </div>
       </div>
     )
@@ -46,4 +48,4 @@ const mapStateToProps = (state)=>({
   
 })
 
-export default connect(mapStateToProps,{sendMessage})(App);
+export default connect(mapStateToProps,{sendMessage})(Bot);

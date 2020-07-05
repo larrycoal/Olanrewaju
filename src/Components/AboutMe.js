@@ -28,7 +28,7 @@ const AboutMe = () => {
 
     return (
         <div className="about-me">
-            <div className="abt-text">
+            <div style={{"padding":"10px"}} className="abt-text">
                 <h2 ref={el=>dec=el}><span style={{ "color": "purple" }}>Const</span> Olanrewaju =</h2>
                 <svg ref={el=>quote1=el} width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.496 20.192C3.816 20.192 2.472 19.592 1.464 18.392C0.504 17.144 0.0240002 15.536 0.0240002 13.568C0.0240002 10.88 0.744 8.456 2.184 6.296C3.672 4.088 5.928 2.24 8.952 0.751999L9.744 1.904C8.304 2.768 6.984 3.992 5.784 5.576C4.632 7.112 4.056 8.672 4.056 10.256C4.056 10.688 4.176 11.048 4.416 11.336C4.656 11.576 5.016 11.696 5.496 11.696C6.696 11.696 7.704 12.128 8.52 12.992C9.384 13.808 9.816 14.816 9.816 16.016C9.816 17.216 9.384 18.224 8.52 19.04C7.704 19.808 6.696 20.192 5.496 20.192ZM17.952 20.192C16.272 20.192 14.928 19.592 13.92 18.392C12.96 17.144 12.48 15.536 12.48 13.568C12.48 10.88 13.2 8.456 14.64 6.296C16.128 4.088 18.384 2.24 21.408 0.751999L22.2 1.904C20.76 2.768 19.44 3.992 18.24 5.576C17.088 7.112 16.512 8.672 16.512 10.256C16.512 10.688 16.632 11.048 16.872 11.336C17.112 11.576 17.472 11.696 17.952 11.696C19.152 11.696 20.16 12.128 20.976 12.992C21.84 13.808 22.272 14.816 22.272 16.016C22.272 17.216 21.84 18.224 20.976 19.04C20.16 19.808 19.152 20.192 17.952 20.192Z" fill="white" />
@@ -39,7 +39,7 @@ const AboutMe = () => {
                 that bring creative design to life just as deigners intended them to be
                     </p>
                 <p>
-                    You can get in touch with me via email
+                    You can get in touch with me via <br></br><a id="email" href="mailto:larry_coal@outlook.com">email</a>
                 </p>
                 </div>
                 <svg ref={el=>quote2=el}width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
