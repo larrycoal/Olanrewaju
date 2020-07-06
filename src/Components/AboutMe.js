@@ -20,11 +20,11 @@ const AboutMe = () => {
             image2: img2,
             displacementImage: diss
         });
-       TweenMax.from(dec,{duration:1,y:10,delay:0,opacity:0})
-       TweenMax.from(quote1,{duration:1,y:10,delay:0.5,opacity:0})
-       TweenMax.from(val,{duration:1,y:10,delay:1.5,opacity:0})
-       TweenMax.from(quote2,{duration:1,y:10,delay:2,opacity:0})
-       TweenMax.from(hov,{duration:1,x:50, delay:2.5,opacity:0})
+       TweenMax.from(dec,{duration:1,y:"10",delay:0,opacity:"0"})
+       TweenMax.from(quote1,{duration:1,y:"10",delay:0.5,opacity:"0"})
+       TweenMax.from(val,{duration:1,y:"10",delay:1.5,opacity:"0"})
+       TweenMax.from(quote2,{duration:1,y:"10",delay:2,opacity:"0"})
+       TweenMax.from(hov,{duration:1,x:"50", delay:2.5,opacity:"0"})
     }, [])
 
     return (

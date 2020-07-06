@@ -8,7 +8,7 @@ const Cards = (props) => {
     let card = useRef(null)
 
     useEffect(() => {
-        TweenMax.from(card,1, { opacity: 0, delay: 1,ease:Power3.easeIn })
+        TweenMax.from(card,1, { opacity: "0", delay: 1,ease:Power3.easeIn })
     })
     return (
         <div ref={el => card = el}>
