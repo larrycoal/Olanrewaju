@@ -1,9 +1,10 @@
 import React, { useEffect, useRef,useState } from 'react'
-import { TweenMax, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap/all'
+import CSSPlugin from 'gsap/CSSPlugin'
 import Intro from './intro'
 import ChatBot from './Bot'
-
-
+// eslint-disable-next-line
+const C = CSSPlugin;
 const LandingPage = () => {
     const [view, setView]=useState(false)
     let logo = useRef(null)
@@ -14,7 +15,7 @@ const LandingPage = () => {
     let bot =useRef(null)
     let env =useRef(null)
     useEffect(() => {
-        TweenMax.from(logo,1,{opacity:0})
+        TweenMax.from(logo,1,{yPercent:-100,repeat:-1,yoyo:true})
         TweenMax.from(logo1,1.5,{opacity:0,x:-10,delay:2.5})
         TweenMax.from(logo2,2,{opacity:0,x:-20,delay:3})
         TweenMax.from(logo3,2.5,{opacity:0,x:-30,delay:3.5})

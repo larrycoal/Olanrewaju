@@ -5,7 +5,8 @@ import CSSPlugin from 'gsap/CSSPlugin'
 import img from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.13.14 PM.png'
 import img2 from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.14.09 PM.png'
 import diss from '../Stylesheet/Assets/heightMap.png'
-
+// eslint-disable-next-line
+const C = CSSPlugin;
 const AboutMe = () => {
     let hov = useRef(null)
     let dec = useRef(null)
@@ -13,7 +14,6 @@ const AboutMe = () => {
     let val = useRef(null)
     let quote2 = useRef(null)
         useEffect(() => {
-        console.log(img)
         new hovereffect({
             parent: hov,
             image1: img,
