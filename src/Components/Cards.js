@@ -1,8 +1,8 @@
 import React, { useEffect, useRef} from 'react'
-import { TweenMax,Power3 } from 'gsap/all'
+import { TweenMax,Power3 } from 'gsap/dist/gsap'
 import CSSPlugin from 'gsap/CSSPlugin'
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
-// eslint-disable-next-line
+
 const C = CSSPlugin;
 const Cards = (props) => {
     let card = useRef(null)

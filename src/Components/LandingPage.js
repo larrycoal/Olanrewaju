@@ -1,9 +1,9 @@
 import React, { useEffect, useRef,useState } from 'react'
-import { TweenMax, Power3 } from 'gsap/all'
+import { TweenMax, Power3 } from 'gsap/dist/gsap'
 import CSSPlugin from 'gsap/CSSPlugin'
 import Intro from './intro'
 import ChatBot from './Bot'
-// eslint-disable-next-line
+
 const C = CSSPlugin;
 const LandingPage = () => {
     const [view, setView]=useState(false)
