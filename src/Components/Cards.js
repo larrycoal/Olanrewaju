@@ -1,12 +1,13 @@
 import React, { useEffect, useRef} from 'react'
-import { TweenLite,Power3 } from 'gsap'
+import { TweenMax,Power3 } from 'gsap'
+import CSSPlugin from 'gsap/CSSPlugin'
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 
 const Cards = (props) => {
     let card = useRef(null)
 
     useEffect(() => {
-        TweenLite.from(card,1, { opacity: 0, delay: 1,ease:Power3.easeIn })
+        TweenMax.from(card,1, { opacity: 0, delay: 1,ease:Power3.easeIn })
     })
     return (
         <div ref={el => card = el}>

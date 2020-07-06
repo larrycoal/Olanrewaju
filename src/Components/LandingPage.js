@@ -1,8 +1,11 @@
 import React, { useEffect, useRef,useState } from 'react'
-import { TweenLite, Power3 } from 'gsap'
+import { TweenMax, Power3 } from 'gsap'
+import  CSSPlugin from 'gsap/CSSPlugin'
 import Intro from './intro'
 import ChatBot from './Bot'
 
+
+const c =CSSPlugin;
 const LandingPage = () => {
     const [view, setView]=useState(false)
     let logo = useRef(null)
@@ -13,17 +16,17 @@ const LandingPage = () => {
     let bot =useRef(null)
     let env =useRef(null)
     useEffect(() => {
-        TweenLite.from(logo,1,{opacity:0})
-        TweenLite.from(logo1,1.5,{opacity:0,x:-10,delay:2.5})
-        TweenLite.from(logo2,2,{opacity:0,x:-20,delay:3})
-        TweenLite.from(logo3,2.5,{opacity:0,x:-30,delay:3.5})
-        TweenLite.from(main,1,{opacity:0,y:-20,delay:2} )
+        TweenMax.from(logo,1,{opacity:0})
+        TweenMax.from(logo1,1.5,{opacity:0,x:-10,delay:2.5})
+        TweenMax.from(logo2,2,{opacity:0,x:-20,delay:3})
+        TweenMax.from(logo3,2.5,{opacity:0,x:-30,delay:3.5})
+        TweenMax.from(main,1,{opacity:0,y:-20,delay:2} )
     }, [])
 
     useEffect (()=>{
         if(view){
-            TweenLite.to(env,{display:"none"})
-            TweenLite.to(bot,1,{display:"inline",delay:.5,ease:Power3.easeIn})
+            TweenMax.to(env,{display:"none"})
+            TweenMax.to(bot,1,{display:"inline",delay:.5,ease:Power3.easeIn})
         }
     },[view])
     

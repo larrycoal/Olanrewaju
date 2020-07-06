@@ -10,6 +10,8 @@
     "gsap": "^3.3.4",
     "hover-effect": "^1.1.0",
     "milligram": "^1.4.1",
+    "netlify": "^4.3.5",
+    "netlify-cli": "^2.57.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-mdl": "^2.1.0",
