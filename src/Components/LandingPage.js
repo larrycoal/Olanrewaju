@@ -16,6 +16,7 @@ const LandingPage = () => {
     let bot =useRef(null)
     let env =useRef(null)
     useEffect(() => {
+        console.log("hello")
         gsap.from(logo,1,{yPercent:"-100",repeat:-1,yoyo:true})
         gsap.from(logo1,1.5,{opacity:"0",x:"-10",delay:2.5})
         gsap.from(logo2,2,{opacity:"0",x:"-20",delay:3})
