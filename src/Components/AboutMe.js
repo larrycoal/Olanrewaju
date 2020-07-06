@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from 'react'
 import hovereffect from 'hover-effect'
 import {TweenMax} from 'gsap/dist/gsap'
-import CSSPlugin from 'gsap/CSSPlugin'
+
 import img from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.13.14 PM.png'
 import img2 from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.14.09 PM.png'
 import diss from '../Stylesheet/Assets/heightMap.png'
 
-const C = CSSPlugin;
+
 const AboutMe = () => {
     let hov = useRef(null)
     let dec = useRef(null)

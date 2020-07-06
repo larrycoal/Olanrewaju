@@ -1,10 +1,10 @@
 import React, { useEffect, useRef,useState } from 'react'
-import { TweenMax, Power3 } from 'gsap/dist/gsap'
-import CSSPlugin from 'gsap/CSSPlugin'
+import {TweenMax, Power3 } from 'gsap'
+
 import Intro from './intro'
 import ChatBot from './Bot'
 
-const C = CSSPlugin;
+
 const LandingPage = () => {
     const [view, setView]=useState(false)
     let logo = useRef(null)

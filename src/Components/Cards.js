@@ -1,9 +1,9 @@
 import React, { useEffect, useRef} from 'react'
-import { TweenMax,Power3 } from 'gsap/dist/gsap'
-import CSSPlugin from 'gsap/CSSPlugin'
+import { TweenMax,Power3 } from 'gsap'
+
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 
-const C = CSSPlugin;
+
 const Cards = (props) => {
     let card = useRef(null)
 
