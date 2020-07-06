@@ -1,5 +1,5 @@
 import React, { useEffect, useRef} from 'react'
-import { TweenMax,Power3 } from 'gsap'
+import {gsap,Power3 } from 'gsap'
 
 import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 
@@ -8,7 +8,7 @@ const Cards = (props) => {
     let card = useRef(null)
 
     useEffect(() => {
-        TweenMax.from(card,1, { opacity: "0", delay: 1,ease:Power3.easeIn })
+       gsap.from(card,1, { opacity: "0", delay: 1,ease:Power3.easeIn })
     })
     return (
         <div ref={el => card = el}>

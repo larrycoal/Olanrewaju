@@ -2,7 +2,9 @@ import React from 'react';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
 import { Link } from 'react-router-dom'
 import Main from './Components/Main'
-
+import {gsap} from 'gsap'
+import {CSSPlugin} from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 function App() {
   

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import hovereffect from 'hover-effect'
-import {TweenMax} from 'gsap/dist/gsap'
+import {gsap} from 'gsap'
 
 import img from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.13.14 PM.png'
 import img2 from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.14.09 PM.png'
@@ -20,11 +20,11 @@ const AboutMe = () => {
             image2: img2,
             displacementImage: diss
         });
-       TweenMax.from(dec,{duration:1,y:"10",delay:0,opacity:"0"})
-       TweenMax.from(quote1,{duration:1,y:"10",delay:0.5,opacity:"0"})
-       TweenMax.from(val,{duration:1,y:"10",delay:1.5,opacity:"0"})
-       TweenMax.from(quote2,{duration:1,y:"10",delay:2,opacity:"0"})
-       TweenMax.from(hov,{duration:1,x:"50", delay:2.5,opacity:"0"})
+       gsap.from(dec,{duration:1,y:"10",delay:0,opacity:"0"})
+       gsap.from(quote1,{duration:1,y:"10",delay:0.5,opacity:"0"})
+       gsap.from(val,{duration:1,y:"10",delay:1.5,opacity:"0"})
+       gsap.from(quote2,{duration:1,y:"10",delay:2,opacity:"0"})
+       gsap.from(hov,{duration:1,x:"50", delay:2.5,opacity:"0"})
     }, [])
 
     return (
