@@ -1,6 +1,7 @@
 import React, { useEffect, useRef,useState } from 'react'
 import {gsap,Power3 } from 'gsap'
-
+import {CSSPlugin} from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 import Intro from './intro'
 import ChatBot from './Bot'
 
