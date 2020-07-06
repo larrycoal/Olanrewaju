@@ -10,7 +10,7 @@ import 'milligram'
 import {Provider} from 'react-redux'
 import {store} from './Components/chat'
 import {gsap,  } from 'gsap'
-import CSSPlugin from 'gsap/CSSPlugin'
+import {CSSPlugin} from 'gsap/CSSPlugin'
 gsap.registerPlugin(CSSPlugin)
 
 ReactDOM.render(
