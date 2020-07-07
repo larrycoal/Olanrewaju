@@ -5,7 +5,7 @@ import {CSSPlugin} from 'gsap/CSSPlugin'
 import Intro from './intro'
 import ChatBot from './Bot'
 
-gsap.registerPlugin(CSSPlugin)
+
 const LandingPage = () => {
     const [view, setView]=useState(false)
     let logo = useRef(null)
@@ -16,6 +16,7 @@ const LandingPage = () => {
     let bot =useRef(null)
     let env =useRef(null)
     useEffect(() => {
+        gsap.registerPlugin(CSSPlugin)
         console.log("hello")
         gsap.from(logo,1,{yPercent:"-100",repeat:-1,yoyo:true})
         gsap.from(logo1,1.5,{opacity:"0",x:"-10",delay:2.5})
