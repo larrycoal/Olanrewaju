@@ -1,9 +1,9 @@
 .svg1{
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
-    animation: anime 2.4s ease forwards;
+    animation: anime 3s ease forwards 1s;
 }
-.svg2{
+/*.svg2{
     stroke-dasharray: 289;
     stroke-dashoffset: 289;
     animation: anime 2.4s ease forwards 0.2s;
@@ -62,7 +62,8 @@
     stroke-dasharray: 151;
     stroke-dashoffset: 151;
     animation: anime 2.4s ease forwards  2.4s;
-}
+}*/
+
 @keyframes anime{
     to{
         stroke-dashoffset: 0;
