@@ -2,7 +2,7 @@ import React, { useEffect, useRef,useState } from 'react'
 import {gsap,Power3 } from 'gsap'
 import {CSSPlugin} from 'gsap/CSSPlugin'
 
-import Intro from './intro'
+//import Intro from './intro'
 import ChatBot from './Bot'
 
 
@@ -35,7 +35,7 @@ const LandingPage = () => {
     return (
         <div className="dark-mode">
             <div ref={el=>logo=el}className="name">
-                <Intro />
+               olanrewaju
             </div>
 
             <div className="subtext" >
