@@ -1,13 +1,10 @@
-import React, { useRef, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import '../Stylesheet/animate.css'
 
 
 const Intro = () => {
 
-    let length = useRef(null)
-
     useEffect(() => {
-        console.log(length.getTotalLength())
     }, [])
     return (
         <svg width="258" height="48" viewBox="0 0 258 48" fill="none" xmlns="http://www.w3.org/2000/svg">
