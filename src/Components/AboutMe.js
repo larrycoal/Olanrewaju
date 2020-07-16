@@ -10,9 +10,8 @@ import diss from '../Stylesheet/Assets/heightMap.png'
 const AboutMe = () => {
     let hov = useRef(null)
     let dec = useRef(null)
-    let quote1 =useRef(null)
     let val = useRef(null)
-    let quote2 = useRef(null)
+  
         useEffect(() => {
         new hovereffect({
             parent: hov,
@@ -21,9 +20,7 @@ const AboutMe = () => {
             displacementImage: diss
         });
        gsap.from(dec,{duration:1,y:"10",delay:0,opacity:"0"})
-       gsap.from(quote1,{duration:1,y:"10",delay:0.5,opacity:"0"})
        gsap.from(val,{duration:1,y:"10",delay:1.5,opacity:"0"})
-       gsap.from(quote2,{duration:1,y:"10",delay:2,opacity:"0"})
        gsap.from(hov,{duration:1,x:"50", delay:2.5,opacity:"0"})
     }, [])
 
