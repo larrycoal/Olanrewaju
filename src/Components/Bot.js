@@ -26,7 +26,7 @@ scrollToBottom = () => {
       feed.map((entry)=>{
        return(
          <ul>
-           <li style={entry.sender==='user'?{'textAlign':'right'}:{'textAlign':'left'}} on>
+           <li className="msg"style={entry.sender==='user'?{'textAlign':'right'}:{'textAlign':'left'}} on>
              {entry.text}
              <div ref={this.messageEnd}></div>
              </li>

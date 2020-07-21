@@ -229,16 +229,20 @@ i{
 .chat-main{
     display:grid;
     grid-template-rows: 1fr 4fr 1fr;
-    width: 45rem;
+    width: 35rem;
     height: 40rem;
     margin: 0 auto;
+    
 }
 .chat-text{
     overflow: scroll;
     margin:  15px;
+    
 }
 li{
     list-style: none;
+    padding: 5px;
+    color: white;
 }
 /* project page*/
 .project_wrapper iframe{
