@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+@media (min-width:305px) and (max-width:485px){
+    .links{
+        font-size: 20px !important;
+    }
+}
+
 body{
     height: 100vh;
-    
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 .title{
     background-color: rgba(0,0,0,0.9)
 }
+.links{
+    font-size: 30px;
+}
 a{
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
+    padding: .8em 1em;
+    margin: 1.1em 0;
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
@@ -21,7 +29,7 @@ a{
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-   
+   font-size: .7em;
 }
 a:hover{
     background: #03e9f4;
@@ -183,27 +191,30 @@ i{
     display: grid;
     justify-content: center;
 }
-/* About me*/
+/*=============================
+           About Me
+===============================*/
 .about-me{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-template-rows: auto;
-    height: 100vh;
     background: #283048;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100%;
+}
+.about-image{
+  width: 100%;
+  order: 2;
+}
+.about-image img{
+   object-fit: contain;
+   height: 400px;
+   width: 350px;
+   margin-left: 35px;
+}
 
-}
-.abt-img{
-    display: grid;
-    height: 100%;
-}
-.abt-img div{
-    height:600px;
-    width:520px;
-    align-self: center;
-    justify-self: center;
-}
+
 .abt-text{
     margin:10px;
     color: white;
@@ -225,7 +236,9 @@ i{
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 
-/* contact page*/
+/*=============================
+           Chat Bot
+===============================*/
 .chat-main{
     display:grid;
     grid-template-rows: 1fr 4fr 1fr;
@@ -315,6 +328,19 @@ li{
     padding: 10px;
     cursor: pointer;
 }
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+  }
 @media (max-width:476px){
     .bot{
         display: none 

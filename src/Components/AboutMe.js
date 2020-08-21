@@ -1,39 +1,37 @@
-import React, { useRef, useEffect } from 'react'
-import hovereffect from 'hover-effect'
-import {gsap} from 'gsap'
-
+import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {EffectCube} from "swiper";
+import "swiper/swiper-bundle.css";
 import img from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.13.14 PM.png'
 import img2 from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.14.09 PM.png'
-import diss from '../Stylesheet/Assets/heightMap.png'
+SwiperCore.use([EffectCube]);
 
 
 const AboutMe = () => {
-    let hov = useRef(null)
-    let dec = useRef(null)
-    let val = useRef(null)
-  
-        useEffect(() => {
-        new hovereffect({
-            parent: hov,
-            image1: img,
-            image2: img2,
-            displacementImage: diss
-        });
-       gsap.from(dec,{duration:1,y:"10",delay:0,opacity:"0"})
-       gsap.from(val,{duration:1,y:"10",delay:1.5,opacity:"0"})
-       gsap.from(hov,{duration:1,x:"50", delay:2.5,opacity:"0"})
-    }, [])
+   
+    let settings = {
+        effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      };
+       
 
     return (
         <div className="about-me">
+            
             <div style={{"padding":"10px"}} className="abt-text">
-                <h2 ref={el=>dec=el}><span style={{ "color": "purple" }}>Const</span> Olanrewaju =</h2>
+                <h2 ><span style={{ "color": "purple" }}>Const</span> Olanrewaju =</h2>
                 
-                <div ref={el=>val=el} style={{"paddingLeft":"20px"}}>
+                <div  style={{"paddingLeft":"20px"}}>
                 <p>
-                    I like to work closely with design teams to transform their design right donw
+                    "I like to work closely with design teams to transform their design right donw
                     to the last pixel. Daily you will find me using modern frontend technologies
-                    that bring creative design to life just as deigners intended them to be
+                    that bring creative design to life just as deigners intended them to be"
                 </p>
                 <p>
                     You can get in touch with me via <br></br><a id="email" href="mailto:larry_coal@outlook.com">email</a>
@@ -41,11 +39,18 @@ const AboutMe = () => {
                 </div>
                 
             </div>
-            <div className="abt-img">
-                <div ref={el => hov = el}>
+            <div className="about-image">
+                <Swiper {...settings}>
+                    <SwiperSlide>
+                    <img  src={img} alt="olanrewaju.png"/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <img  src="https://res.cloudinary.com/dbdrtuscd/image/upload/v1584964296/Screenshot_2020-03-23_at_12.51.02_PM_uqpkvb.png" alt="olanrewaju.png"/>
+                    </SwiperSlide>
+                </Swiper>
 
-                </div>
             </div>
+           
         </div>
     )
 }

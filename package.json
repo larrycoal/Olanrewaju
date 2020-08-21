@@ -18,11 +18,14 @@
     "react-dom": "^16.13.1",
     "react-mdl": "^2.1.0",
     "react-redux": "^7.2.0",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-slick": "^0.27.9",
     "redux": "^4.0.5",
     "serve": "^11.3.2",
-    "serve-build": "^0.1.0"
+    "serve-build": "^0.1.0",
+    "swiper": "^6.1.2"
   },
   "scripts": {
     "start": "serve -s build",
