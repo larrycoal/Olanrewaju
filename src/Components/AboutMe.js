@@ -45,7 +45,7 @@ const AboutMe = () => {
                     <img  src={img} alt="olanrewaju.png"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                    <img  src="https://res.cloudinary.com/dbdrtuscd/image/upload/v1584964296/Screenshot_2020-03-23_at_12.51.02_PM_uqpkvb.png" alt="olanrewaju.png"/>
+                    <img  src={img2} alt="olanrewaju.png"/>
                     </SwiperSlide>
                 </Swiper>
 
