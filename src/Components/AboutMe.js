@@ -1,58 +1,67 @@
-import React from 'react'
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {EffectCube} from "swiper";
+import{ Flip,Fade,Roll} from 'react-reveal'
+import SwiperCore, { EffectCube } from "swiper";
 import "swiper/swiper-bundle.css";
-import img from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.13.14 PM.png'
-import img2 from '../Stylesheet/Assets/Screenshot 2020-07-03 at 1.14.09 PM.png'
 SwiperCore.use([EffectCube]);
 
-
 const AboutMe = () => {
-   
-    let settings = {
-        effect: 'cube',
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      };
-       
+  let settings = {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+  };
 
-    return (
-        <div className="about-me">
-            
-            <div style={{"padding":"10px"}} className="abt-text">
-                <h2 ><span style={{ "color": "purple" }}>Const</span> Olanrewaju =</h2>
-                
-                <div  style={{"paddingLeft":"20px"}}>
-                <p>
-                    "I like to work closely with design teams to transform their design right donw
-                    to the last pixel. Daily you will find me using modern frontend technologies
-                    that bring creative design to life just as deigners intended them to be"
-                </p>
-                <p>
-                    You can get in touch with me via <br></br><a id="email" href="mailto:larry_coal@outlook.com">email</a>
-                </p>
-                </div>
-                
-            </div>
-            <div className="about-image">
-                <Swiper {...settings}>
-                    <SwiperSlide>
-                    <img  src={img} alt="olanrewaju.png"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <img  src={img2} alt="olanrewaju.png"/>
-                    </SwiperSlide>
-                </Swiper>
+  return (
+    <div className="about-me">
+      <div style={{ padding: "10px" }} className="abt-text">
+        <h2>
+          <Flip left cascade>
+          Const Olanrewaju =
+          </Flip>
+        </h2>
 
-            </div>
-           
+        <div style={{ paddingLeft: "20px" }}>
+          <p>
+              <Fade right cascade>
+            "I like to work closely with design teams to transform their design
+            right donw to the last pixel. Daily you will find me using modern
+            frontend technologies that bring creative design to life just as
+            deigners intended them to be"
+            </Fade>
+          </p>
+          <p>
+            <Fade right cascade>
+            You can get in touch with me via 
+            </Fade>
+            <br></br>
+            <a id="email" href="mailto:larry_coal@outlook.com">
+              email
+            </a>
+          </p>
         </div>
-    )
-}
+      </div>
+      <Roll right>
+      <div className="about-image-wrapper">
+        <div className="about-image-container">
+          <Swiper {...settings}>
+            <SwiperSlide>
+              <div id="image2"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div id="image"></div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      </Roll>
+    </div>
+  );
+};
 
-export default AboutMe
+export default AboutMe;
