@@ -142,7 +142,6 @@ a span:nth-child(4){
 }
 /* drawer*/
 .drawer{
-    background-image: url("./Assets/josh-sorenson-B93kPaspXcA-unsplash.jpg");
     background-color: black;
     background-position: center;
     background-size: cover;
