@@ -28,6 +28,10 @@ const LandingPage = () => {
     if (view) {
       gsap.to(env, { display: "none" });
       gsap.to(bot, 1, { display: "inline", delay: 0.5, ease: Power3.easeIn });
+    }else{
+      gsap.to(bot,{ display: "none"});
+      gsap.to(env, { display: "inline",delay: 0.5});
+      
     }
   }, [view]);
 
@@ -76,7 +80,9 @@ const LandingPage = () => {
       </div>
       <div className="bot">
         <div ref={(el) => (bot = el)} style={{ display: "none", opacity: "0" }}>
-          <ChatBot />
+          <ChatBot 
+          Close={()=>setView(!view)}
+          />
         </div>
         <i
           ref={(el) => (env = el)}

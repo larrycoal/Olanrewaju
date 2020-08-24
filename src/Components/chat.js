@@ -21,7 +21,7 @@ const messageMiddleware = ()=>next=>action=>{
       })
   }
 }
-const initstate =[{text:"HELLO!! I am a simple conversation chatbot created by Olanrewaju,I will try to answer your question to the best of my abilities",sender:'bot'}]
+const initstate =[{text:"HELLO!! I am a simple conversation chatbot created by Olanrewaju,I can get you his contact details and will try to answer your question to the best of my abilities",sender:'bot'}]
 const messageReducer=(state=initstate,action)=>{
     switch(action.type){
         case "ON-MESSAGE": return [...state,action.payload]
