@@ -106,27 +106,23 @@ const Project = () => {
   };
   return (
     <div
+    className="project_wrapper"
       style={{
         height: "500px",
-        background:`#eceff1 url(${stripes})`
       }}
     >
       <div>
-        <h1
-          style={{
-            textAlign: "center",
-          }}
-        >
-          <Zoom left cascade>
-            My Projects
-          </Zoom>
+        <h1>
+            My Projects 
         </h1>
       </div>
+      <div>
       <Slide right cascade>
         <Swiper id="main" {...settings}>
           {showSwipe()}
         </Swiper>
       </Slide>
+      </div>
     </div>
   );
 };
