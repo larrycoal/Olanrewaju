@@ -275,13 +275,19 @@ li{
     width:900px
 }
 .project_wrapper{
-    height:100vh;
     padding:10px;
     background: #076585;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: scroll;
     display: flex;
+}
+.project_wrapper div:nth-child(1){
+    text-decoration: underline;
+    color: aqua;
+}
+.project_wrapper div:nth-child(2){
+    overflow: hidden;
 }
 .thumbnail_container {
     width: calc(1440px * 0.25);
@@ -320,23 +326,28 @@ li{
     height: 100vh;
     overflow: scroll;
 }
-.project-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-    
+.project_card{
+   display: flex;
+   flex-direction: column;
+   background-color: white; 
 }
-.project-card section{
-    padding: 10px;
+.project_card div:nth-child(1) {
+    padding: 5px;
+    height: 100px;
+    background-size: contain !important;
+    background-color: teal !important;
+    background-repeat: no-repeat !important;
+}
+.project_card div:nth-child(2) p {
+  padding: 20px;
+  color: #000000 !important;
 }
 .bot{
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 .bot i{
-    font-size: 3rem;
     padding: 10px;
     cursor: pointer;
 }
@@ -375,5 +386,11 @@ li{
     }
     .about-image-wrapper{
         height: 300px;
+    }
+    .project_wrapper h1{
+        font-size: 35px;
+        margin: 10px;
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
     }
   }

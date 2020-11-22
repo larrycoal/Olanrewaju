@@ -16,7 +16,6 @@ const LandingPage = () => {
   let env = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(CSSPlugin);
-    console.log("hello");
     gsap.from(logo, 1, { yPercent: "-100", repeat: -1, yoyo: true });
     gsap.from(logo1, 1.5, { opacity: "0", x: "-10", delay: 2.5 });
     gsap.from(logo2, 2, { opacity: "0", x: "-20", delay: 3 });
@@ -84,10 +83,11 @@ const LandingPage = () => {
           Close={()=>setView(!view)}
           />
         </div>
+      
         <i
           ref={(el) => (env = el)}
           onClick={() => setView(!view)}
-          className="fa fa-envelope"
+          className="fa fa-comments fa-3x"
           aria-hidden="true"
         ></i>
       </div>
