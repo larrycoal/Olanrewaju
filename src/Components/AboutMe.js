@@ -30,7 +30,7 @@ const AboutMe = () => {
           <p>
               <Fade right cascade>
             "I like to work closely with design teams to transform their design
-            right donw to the last pixel. Daily you will find me using modern
+            right down to the last pixel. Daily you will find me using modern
             frontend technologies that bring creative design to life just as
             deigners intended them to be"
             </Fade>
@@ -51,10 +51,10 @@ const AboutMe = () => {
         <div className="about-image-container">
           <Swiper {...settings}>
             <SwiperSlide>
-              <div id="image2"></div>
+              <div id="image"></div>
             </SwiperSlide>
             <SwiperSlide>
-              <div id="image"></div>
+              <div id="image2"></div>
             </SwiperSlide>
           </Swiper>
         </div>

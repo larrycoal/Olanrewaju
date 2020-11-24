@@ -4,7 +4,7 @@ import '../Stylesheet/animate.css'
 
 const Intro = () => {
     return (
-        <svg width="258" height="48" viewBox="0 0 258 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="300" height="48" viewBox="0 0 258 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.0240021" y="0.0879974" width="258" height="48" fill="black">
                 <rect fill="white" x="0.0240021" y="0.0879974" width="258" height="48" />
                 <path d="M11.7 31.104L3.024 22.824L11.7 14.58H15.84L7.128 22.824L15.84 31.104H11.7Z" />

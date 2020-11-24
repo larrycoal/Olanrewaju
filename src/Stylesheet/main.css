@@ -213,17 +213,19 @@ i{
 }
 .about-image-container #image{
    height: 400px;
-   background: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1584964296/Screenshot_2020-03-23_at_12.51.02_PM_uqpkvb.png");
+   background: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1606239414/lanre1_q2it41.png");
    background-size: cover;
    background-repeat: no-repeat;
    width: 300px;
+   background-color:transparent;
 }
 .about-image-container #image2{
    height: 400px;
    width: 300px;
-   background: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1598194072/olanrewaju_xbyfcm.png");
+   background: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1606239415/lanre2_wr0uul.png");
    background-size: contain;
    background-repeat: no-repeat;
+
 }
 
 
