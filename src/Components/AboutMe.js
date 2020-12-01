@@ -53,9 +53,6 @@ const AboutMe = () => {
             <SwiperSlide>
               <div id="image"></div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div id="image2"></div>
-            </SwiperSlide>
           </Swiper>
         </div>
       </div>
