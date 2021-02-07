@@ -1,14 +1,18 @@
-import React from 'react';
-import Main from './Components/Main'
-import {gsap} from 'gsap'
-import {CSSPlugin} from 'gsap/CSSPlugin'
-gsap.registerPlugin(CSSPlugin)
+import React from "react";
+import LandingPage from "./Components/LandingPage";
+import AboutMe from "./Components/AboutMe";
+import Projects from "./Components/Project";
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+gsap.registerPlugin(CSSPlugin);
 
 function App() {
   return (
-    <div>
-   <Main/>
-    </div>
+    <>
+      <LandingPage />
+      <AboutMe />
+      <Projects />
+    </>
   );
 }
 

@@ -63,6 +63,13 @@ const Project = () => {
       link: "http://xshare.ga/",
       github: "https://github.com/larrycoal/nodejs-update",
     },
+    {
+      id:5,
+      image:"https://res.cloudinary.com/dbdrtuscd/image/upload/v1612702856/chelsea_rbaccj.png",
+      desc:"A CRUD app built with react and firebase. it showcase chelsea football club with beautiful UI. (mobile version coming soon)",
+      link:"https://mancity-79a9f.web.app/",
+      github:"https://github.com/larrycoal/Mancity",
+    }
   ]);
 
   const showSwipe = () => {
