@@ -10,10 +10,10 @@ let settings = {
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
+    rotate: 30,
+    stretch: 10,
     depth: 200,
-    modifier: 1,
+    modifier: 2,
     slideShadows: true,
   },
 };
