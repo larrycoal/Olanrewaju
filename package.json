@@ -29,7 +29,7 @@
     "swiper": "^6.1.2"
   },
   "scripts": {
-    "start": "rserve -s bild",
+    "start": "serve -s bild",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
