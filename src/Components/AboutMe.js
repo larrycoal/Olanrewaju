@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import{ Flip,Fade,Roll} from 'react-reveal'
+import { Flip } from "react-reveal";
 import SwiperCore, { EffectCube } from "swiper";
 import "swiper/swiper-bundle.css";
 SwiperCore.use([EffectCube]);
@@ -20,25 +20,21 @@ const AboutMe = () => {
   return (
     <div className="about-me">
       <div style={{ padding: "10px" }} className="abt-text">
-        <h2>
+        <h2 style={{fontSize:"2.6rem"}}>
           <Flip left cascade>
-          Const Olanrewaju =
+            Const Olanrewaju =
           </Flip>
         </h2>
 
         <div style={{ paddingLeft: "20px" }}>
           <p>
-              <Fade right cascade>
             "I like to work closely with design teams to transform their design
             right down to the last pixel. Daily you will find me using modern
             frontend technologies that bring creative design to life just as
             deigners intended them to be"
-            </Fade>
           </p>
           <p>
-            <Fade right cascade>
-            You can get in touch with me via 
-            </Fade>
+            You can get in touch with me via
             <br></br>
             <a id="email" href="mailto:larry_coal@outlook.com">
               email
@@ -46,7 +42,6 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <Roll right>
       <div className="about-image-wrapper">
         <div className="about-image-container">
           <Swiper {...settings}>
@@ -56,7 +51,6 @@ const AboutMe = () => {
           </Swiper>
         </div>
       </div>
-      </Roll>
     </div>
   );
 };

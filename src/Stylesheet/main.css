@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-@media (min-width:305px) and (max-width:485px){
-    .links{
-        font-size: 20px !important;
-    }
-}
 
 body{
     height: 100vh;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
 }
 .title{
     background-color: rgba(0,0,0,0.9)
@@ -119,88 +117,40 @@ a span:nth-child(4){
         bottom: 100%;
     }
 }
-.light-mode{
+
+.landingpage_wrapper{
     display: grid;
     justify-content: center;
     align-content: center;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    transition: background-color 1s;
-}
-.dark-mode{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: scroll;
     text-align: center;
     transition: background-color 1s;
 }
-/* drawer*/
-.drawer{
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    color: white;
-}
-#drawer{
-    color: white;
-    font-family: poppins;
-    font-weight: 500px;
-    font-size: 2rem;
-}
-.drawer::after{
-    content: "";
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-}
+
 /* landing page*/
 .heading{
     color: white;
 }
-.light-heading{
-    text-shadow:0px 8px 8px black;
-    
-}
+
 .subtext p{
     font-weight: 200;
     letter-spacing: 5px;
     color: white;
 }
 
-/* bulb styling*/
-i{
-    color:white;
-}
 
-
-.mode i{
-    font-size: 50px;
-    transform: rotate(180deg);
-    cursor: pointer;
-}
-.mode{
-    position: fixed;
-    top:70px;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-}
 /*=============================
            About Me
 ===============================*/
 .about-me{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-template-rows: auto;
-    background: #283048;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-height: 100%;
+    background: rgb(224, 222, 222);
+    margin: 50px;
+    box-shadow: -24px 25px 2px -3px rgb(158 152 152 / 40%);
+    border-radius: 20px;
 }
 .about-image-wrapper{
     width: 100%;
@@ -231,10 +181,11 @@ i{
 
 .abt-text{
     margin:10px;
-    color: white;
+    color: rgb(56, 54, 54);
     height: 100%;
     display: grid;
     align-content: center;
+    text-overflow: clip;
 }
 .abt-text p{
     font-weight: 300;
@@ -286,7 +237,7 @@ li{
 }
 .project_wrapper div:nth-child(1){
     text-decoration: underline;
-    color: aqua;
+    color: rgb(224, 222, 222);
 }
 .project_wrapper div:nth-child(2){
     overflow: hidden;

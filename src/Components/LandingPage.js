@@ -35,7 +35,7 @@ const LandingPage = () => {
   }, [view]);
 
   return (
-    <div className="dark-mode" style={{
+    <div className="landingpage_wrapper" style={{
         height:`${window.innerHeight}px`
     }}>
       <div ref={(el) => (logo = el)} className="name">
