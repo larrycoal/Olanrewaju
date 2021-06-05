@@ -68,6 +68,14 @@ const Project = () => {
       link: "https://mancity-79a9f.web.app/",
       github: "https://github.com/larrycoal/Mancity",
     },
+    {
+      id: 5,
+      image:
+        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1622929208/github-social_tjkb1h.png",
+      desc: "Github-Clone. built using graphql github api",
+      link: "https://loving-kilby-66f091.netlify.app/",
+      github: "https://github.com/larrycoal/Github-clone",
+    },
   ]);
 
   const showSwipe = () => {
