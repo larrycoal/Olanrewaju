@@ -22,7 +22,7 @@ const AboutMe = () => {
       <div style={{ padding: "10px" }} className="abt-text">
         <h2 style={{fontSize:"2.6rem"}}>
           <Flip left cascade>
-            Const Olanrewaju =
+            About Me
           </Flip>
         </h2>
 
