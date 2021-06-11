@@ -47,10 +47,10 @@ const Project = () => {
     {
       id: 3,
       image:
-        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1584996242/Screenshot_2020-03-23_at_9.36.08_PM_ki2emb.png",
-      desc: "This website showcase member of the lagos state cabinet and public email to reach them by",
-      link: "/",
-      github: "https://github.com/larrycoal/Covid-9ja",
+        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1623405614/Screenshot_2021-06-11_at_10.57.43_AM_jo7i2p.png",
+      desc: "An invoice generator",
+      link: "https://fichaya-larry.herokuapp.com/",
+      github: "https://github.com/larrycoal/fichaya-assessment",
     },
     {
       id: 4,
@@ -69,12 +69,20 @@ const Project = () => {
       github: "https://github.com/larrycoal/Mancity",
     },
     {
-      id: 5,
+      id: 6,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1622929208/github-social_tjkb1h.png",
       desc: "Github-Clone. built using graphql github api",
       link: "https://loving-kilby-66f091.netlify.app/",
       github: "https://github.com/larrycoal/Github-clone",
+    },
+    {
+      id: 7,
+      image:
+        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1623406109/Screenshot_2021-06-11_at_11.08.10_AM_xxxrgf.png",
+      desc: "A Blog site built with Vue",
+      link: "https://relaxed-dubinsky-32a8b9.netlify.app/",
+      github: "https://github.com/larrycoal/fichaya-assessment",
     },
   ]);
 
