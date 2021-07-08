@@ -24,7 +24,7 @@ const Project = () => {
       id: 0,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1598010093/Screenshot_2020-08-21_at_12.39.56_PM_leijhp.png",
-      desc: "Node URl-Shortner",
+      desc: "Node URl-Shortner. React. Nodejs. Express.",
       link: "https://trim.ng/",
       github: "https://github.com/hngi/trim",
     },
@@ -32,7 +32,7 @@ const Project = () => {
       id: 1,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1597824993/covidThumb_nhtt6q.png",
-      desc: "A website built with react, it showcases some covid-19 data as it affects Nigeria.",
+      desc: "A website built with react, it showcases some covid-19 data as it affects Nigeria.React.GSAP",
       link: "https://covid-9ja-watch.herokuapp.com/",
       github: "https://github.com/larrycoal/Covid-9ja",
     },
@@ -40,7 +40,7 @@ const Project = () => {
       id: 2,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1597859221/Ecommerce_tkh6dh.png",
-      desc: " An E-commerce web application built with react and redux ",
+      desc: " An E-commerce web application. React. React-Router. Redux",
       link: "https://larry-e-commerce.herokuapp.com/",
       github: "https://github.com/larrycoal/Team-N-Ecommerce",
     },
@@ -48,23 +48,23 @@ const Project = () => {
       id: 3,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1623405614/Screenshot_2021-06-11_at_10.57.43_AM_jo7i2p.png",
-      desc: "An invoice generator",
+      desc: "An invoice generator. React. React-Router. Redux",
       link: "https://fichaya-larry.herokuapp.com/",
       github: "https://github.com/larrycoal/fichaya-assessment",
     },
     {
       id: 4,
       image:
-        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1598010939/xShare_sxt4vb.png",
-      desc: "A file sharing application that converts files into a sharable link.",
-      link: "http://xshare.ga/",
-      github: "https://github.com/larrycoal/nodejs-update",
+        "https://res.cloudinary.com/dbdrtuscd/image/upload/v1625766823/Screenshot_2021-07-08_at_6.49.18_PM_qymhzd.png",
+      desc: "A colorful website HTML. CSS. JS",
+      link: "https://angry-euler-caa3c1.netlify.app/",
+      github: "https://github.com/larrycoal/sunnyside",
     },
     {
       id: 5,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1612702856/chelsea_rbaccj.png",
-      desc: "A CRUD app built with react and firebase. it showcase chelsea football club with beautiful UI. (mobile version coming soon)",
+      desc: "A CRUD app built with react and firebase. it showcase chelsea football club with beautiful UI. (mobile version coming soon) React.Firebase.Redux",
       link: "https://mancity-79a9f.web.app/",
       github: "https://github.com/larrycoal/Mancity",
     },
@@ -72,7 +72,7 @@ const Project = () => {
       id: 6,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1622929208/github-social_tjkb1h.png",
-      desc: "Github-Clone. built using graphql github api",
+      desc: "Github-Clone. built using graphql github api. HTML.CSS.JS.GRAPHQL",
       link: "https://loving-kilby-66f091.netlify.app/",
       github: "https://github.com/larrycoal/Github-clone",
     },
@@ -80,7 +80,7 @@ const Project = () => {
       id: 7,
       image:
         "https://res.cloudinary.com/dbdrtuscd/image/upload/v1623406109/Screenshot_2021-06-11_at_11.08.10_AM_xxxrgf.png",
-      desc: "A Blog site built with Vue",
+      desc: "A Blog site built with Vue. VUE. VUE-X",
       link: "https://relaxed-dubinsky-32a8b9.netlify.app/",
       github: "https://github.com/larrycoal/fichaya-assessment",
     },

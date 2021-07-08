@@ -147,14 +147,13 @@ a span:nth-child(4){
 .about-me{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    background: rgb(224, 222, 222);
+    background: rgb(54, 50, 50);
     margin: 50px;
     box-shadow: -24px 25px 2px -3px rgb(158 152 152 / 40%);
     border-radius: 20px;
 }
 .about-image-wrapper{
     width: 100%;
-    height: 500px;
 }
 .about-image-container{
   width: 300px;
@@ -169,19 +168,12 @@ a span:nth-child(4){
    width: 300px;
    background-color:transparent;
 }
-.about-image-container #image2{
-   height: 400px;
-   width: 300px;
-   background: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1606239415/lanre2_wr0uul.png");
-   background-size: contain;
-   background-repeat: no-repeat;
 
-}
 
 
 .abt-text{
     margin:10px;
-    color: rgb(56, 54, 54);
+    color: rgb(243, 240, 240);
     height: 100%;
     display: grid;
     align-content: center;
@@ -344,19 +336,8 @@ li{
     .bot{
         display: none 
     }
-    .about-image-container #image{
-        height: 200px;
-        width: 150px;
-    }  
-    .about-image-container #image2{
-        height: 200px;
-        width: 150px;
-    }
     .about-image-container{
-        width: 150px;
-    }
-    .about-image-wrapper{
-        height: 300px;
+        margin: 0;
     }
     .project_wrapper h1{
         font-size: 35px;

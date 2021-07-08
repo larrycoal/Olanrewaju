@@ -1,21 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Flip } from "react-reveal";
-import SwiperCore, { EffectCube } from "swiper";
-import "swiper/swiper-bundle.css";
-SwiperCore.use([EffectCube]);
+import { Flip ,Slide} from "react-reveal";
 
 const AboutMe = () => {
-  let settings = {
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-  };
+
 
   return (
     <div className="about-me">
@@ -28,10 +15,12 @@ const AboutMe = () => {
 
         <div style={{ paddingLeft: "20px" }}>
           <p>
-            "I like to work closely with design teams to transform their design
+            <Slide left cascade>
+            I like to work closely with design teams to transform their design
             right down to the last pixel. Daily you will find me using modern
             frontend technologies that bring creative design to life just as
-            deigners intended them to be"
+            deigners intended them to be
+            </Slide>
           </p>
           <p>
             You can get in touch with me via
@@ -44,11 +33,7 @@ const AboutMe = () => {
       </div>
       <div className="about-image-wrapper">
         <div className="about-image-container">
-          <Swiper {...settings}>
-            <SwiperSlide>
-              <div id="image"></div>
-            </SwiperSlide>
-          </Swiper>
+              <img src="https://res.cloudinary.com/dbdrtuscd/image/upload/v1606239414/lanre1_q2it41.png" alt="olayiwola olanrewaju pic"/>
         </div>
       </div>
     </div>
